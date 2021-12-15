@@ -2,9 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerControl : MonoBehaviour
+public class PetDog : pet
 {
-    public Plates plates;
     // Start is called before the first frame update
     void Start()
     {
@@ -14,14 +13,6 @@ public class PlayerControl : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetMouseButtonDown(0))
-        {
-            LlenarPlato();
-        }
-    }
-
-    void LlenarPlato()
-    {
-        plates.OnMouseDown();
+        
     }
 }
