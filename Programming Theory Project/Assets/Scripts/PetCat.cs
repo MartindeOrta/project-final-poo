@@ -2,14 +2,17 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PetDog : pet
+public class PetCat :pet
 {
+    private Animation ani;
     public Plates plate;
     // Start is called before the first frame update
     void Start()
     {
+        ani = GetComponent<Animation>();
+
         plate = GameObject.Find("PlateDog").GetComponent<Plates>();
-        myFood = "Dog";
+        myFood = "Cat";
     }
 
     // Update is called once per frame
@@ -19,3 +22,4 @@ public class PetDog : pet
         Eat(lookDirection, plate.fullPlate);
     }
 }
+

@@ -5,10 +5,10 @@ using UnityEngine;
 public class Plates : MonoBehaviour
 
 {
-    [SerializeField] public string kindPed;
-   
+    [SerializeField] public string kindPet;
+    public bool fullPlate;
     public string NameFood;
-    public string kindPet;
+    
     public List<GameObject> foodGameObjets;
 
 
@@ -16,7 +16,7 @@ public class Plates : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        fullPlate = false;
     }
 
     // Update is called once per frame
@@ -32,13 +32,17 @@ public class Plates : MonoBehaviour
     }
     public void OnMouseDown()
     {
-        Debug.Log(kindPed);
-        SpawnFood(foodGameObjets[0], gameObject.transform.position);
+        Debug.Log(kindPet);
+        if (fullPlate == false)
+        {
+            SpawnFood(foodGameObjets[0]);
+            fullPlate = true;
+        }
 
     }
-    public void SpawnFood(GameObject foodPrefab, Vector3 positionFood)
+    public void SpawnFood(GameObject foodPrefab)
     {
-
-        Instantiate(foodPrefab, positionFood, foodPrefab.transform.rotation);
+        Vector3 positionFood = gameObject.transform.position + new Vector3(0f, 0.35f, 0f );
+        Instantiate(foodPrefab,positionFood, foodPrefab.transform.rotation);
     }
 }
