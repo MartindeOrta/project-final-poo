@@ -8,8 +8,8 @@ public class Plates : MonoBehaviour
     [SerializeField] public string kindPet;
     public bool fullPlate;
     public string NameFood;
-    
-    public List<GameObject> foodGameObjets;
+    public bool prueva;
+    public GameObject foodGameObjets;
 
 
 
@@ -21,8 +21,7 @@ public class Plates : MonoBehaviour
 
     // Update is called once per frame
     void Update()
-    {
-        
+    { 
     }
 
 
@@ -35,7 +34,7 @@ public class Plates : MonoBehaviour
         Debug.Log(kindPet);
         if (fullPlate == false)
         {
-            SpawnFood(foodGameObjets[0]);
+            SpawnFood(foodGameObjets);
             fullPlate = true;
         }
 
@@ -45,4 +44,24 @@ public class Plates : MonoBehaviour
         Vector3 positionFood = gameObject.transform.position + new Vector3(0f, 0.35f, 0f );
         Instantiate(foodPrefab,positionFood, foodPrefab.transform.rotation);
     }
+
+    //public void OnCollisionEnter(Collision collision)
+    //{
+
+    //    if (collision.gameObject.name)
+    //        Destroy(foodGameObjets);
+    //        fullPlate = false;
+    //        Debug.Log("colliciono");
+
+    //    }
+    //}
+    //public void OnTriggerEnter(Collider other)
+    //{
+    //    if (other.gameObject.CompareTag("Pet"))
+    //    {
+    //        Destroy(foodGameObjets);
+    //        fullPlate = false;
+    //    }
+    //}
+ 
 }

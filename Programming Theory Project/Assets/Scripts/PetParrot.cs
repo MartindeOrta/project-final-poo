@@ -35,6 +35,7 @@ public class PetParrot : pet
         {
             anim.SetFloat("VelX", 1);
         }
-        else { anim.SetFloat("Velx", 0); }
+        else { anim.SetFloat("VelX", 0); }
+        
     }
 }

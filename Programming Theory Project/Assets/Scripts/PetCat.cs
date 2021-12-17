@@ -26,6 +26,8 @@ public class PetCat : pet
         {
             ani.SetFloat("VelX", 1);
         }
-        else { ani.SetFloat("Velx", 0); }
+        else { ani.SetFloat("VelX", 0); }
 
-    } }    
+    }
+  
+}    

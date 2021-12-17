@@ -24,5 +24,8 @@ public class PetDog : pet
             ani.SetFloat("VarX", 1);
         }
         else { ani.SetFloat("VarX", 0); }
+       
     }
+
+    
 }
