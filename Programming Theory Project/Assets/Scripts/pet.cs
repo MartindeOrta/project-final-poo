@@ -6,11 +6,12 @@ public class pet : MonoBehaviour
 {
     public string myFood;
     public string seleccionFood;
-    public float run;
+    public bool full;
+    public Plates plate;
     // Start is called before the first frame update
     void Start()
     {
-        run = 1;
+        full = true;
     }
 
     // Update is called once per frame
@@ -25,17 +26,18 @@ public class pet : MonoBehaviour
         {
           
             transform.Translate(positionPlate * 1 * Time.deltaTime);
-            run = 1;
+
          
         }
            }
     public void OnCollisionEnter(Collision other)
     {
+        full = true;
         if (other.gameObject.CompareTag("food"))
         {
             Destroy(other.gameObject);
             transform.Translate(Vector3.zero);
-            run = 0;
+            plate.fullPlate = false;
 
         }
 

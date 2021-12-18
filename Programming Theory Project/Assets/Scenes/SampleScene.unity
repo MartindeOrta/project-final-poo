@@ -334,6 +334,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   myFood: 
   seleccionFood: 
+  full: 0
   plate: {fileID: 0}
 --- !u!54 &305973348
 Rigidbody:
@@ -762,8 +763,8 @@ MonoBehaviour:
   kindPet: Dog
   fullPlate: 0
   NameFood: 
-  foodGameObjets:
-  - {fileID: 198899301849889868, guid: 94d56bd36b2784646bd199d6117bd3ec, type: 3}
+  prueva: 0
+  foodGameObjets: {fileID: 198899301849889868, guid: 94d56bd36b2784646bd199d6117bd3ec, type: 3}
 --- !u!1 &705190536
 GameObject:
   m_ObjectHideFlags: 0
@@ -876,8 +877,8 @@ MonoBehaviour:
   kindPet: Parrot
   fullPlate: 0
   NameFood: 
-  foodGameObjets:
-  - {fileID: 9154149359466628259, guid: 6e51b131fa2da78429af1190c203b172, type: 3}
+  prueva: 0
+  foodGameObjets: {fileID: 9154149359466628259, guid: 6e51b131fa2da78429af1190c203b172, type: 3}
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
@@ -1073,6 +1074,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   myFood: 
   seleccionFood: 
+  full: 0
   plate: {fileID: 0}
 --- !u!1 &1164563594
 GameObject:
@@ -1186,8 +1188,8 @@ MonoBehaviour:
   kindPet: Cat
   fullPlate: 0
   NameFood: 
-  foodGameObjets:
-  - {fileID: 466914103756696643, guid: dc3c633e93409214eaaff1a9a2bf41e0, type: 3}
+  prueva: 0
+  foodGameObjets: {fileID: 466914103756696643, guid: dc3c633e93409214eaaff1a9a2bf41e0, type: 3}
 --- !u!1001 &1190729861
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1342,7 +1344,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4303844821561524, guid: 312b31977ed9b2d48a14849ebb8c7fb3, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.6
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4303844821561524, guid: 312b31977ed9b2d48a14849ebb8c7fb3, type: 3}
       propertyPath: m_LocalRotation.w
@@ -1450,6 +1452,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   myFood: 
   seleccionFood: 
+  full: 0
   plate: {fileID: 0}
   x: 0
   y: 0
@@ -1807,7 +1810,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4361374554138886284, guid: 9fedecbd1aa68924b816f15cb97e611a, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 4.74
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 4361374554138886284, guid: 9fedecbd1aa68924b816f15cb97e611a, type: 3}
       propertyPath: m_LocalPosition.y

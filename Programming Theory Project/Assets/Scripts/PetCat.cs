@@ -6,7 +6,7 @@ using UnityEngine;
 public class PetCat : pet
 {
     private Animator ani;
-    public Plates plate;
+   
   
     // Start is called before the first frame update
     void Start()
