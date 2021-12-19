@@ -7,14 +7,12 @@ public class pet : MonoBehaviour
 
 
     [SerializeField] public Plates plate;
-    [SerializeField] public static Animator ani;
-    [SerializeField] private  int runAnima;
-    //[SerializeField] public int run
-    //{
-    //    get 
-    //}
+    [SerializeField] public  Animator ani;
+    [SerializeField] public static int runAnima { get; private set; } = 1;
+    [SerializeField] public static int stopAnima { get; private set; } = 0;
 
-        [SerializeField] public static float speed { get; } = 1;
+
+    [SerializeField] public static float speed { get; } = 1;
    
 
 
@@ -63,11 +61,11 @@ public class pet : MonoBehaviour
         if (plate.fullPlate)
         
         {
-            ani.SetFloat("VelX", 1);
+            ani.SetFloat("VelX", runAnima);
         }
         else
         {
-            ani.SetFloat("VelX", 0);
+            ani.SetFloat("VelX", stopAnima);
 
         }
 
