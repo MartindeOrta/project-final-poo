@@ -7,7 +7,7 @@ public class PlayerControl : MonoBehaviour
     [SerializeField] private Plates plates;
 
     void Update()
-    {    
+    {    // ABSTRACTION
         if (Input.GetMouseButtonDown(0))
         {
             plates.OnMouseDown();

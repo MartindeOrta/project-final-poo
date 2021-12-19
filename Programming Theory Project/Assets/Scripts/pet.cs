@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class pet : MonoBehaviour
 {
-
+    // ENCAPSULATION
 
     [SerializeField] public Plates plate;
     [SerializeField] public  Animator ani;

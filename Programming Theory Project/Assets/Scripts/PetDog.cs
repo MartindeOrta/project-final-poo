@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+// INHERITANCE
 public class PetDog : pet
 {
     void Update()
@@ -10,7 +10,7 @@ public class PetDog : pet
         Eat(plate.fullPlate);
         Move();
 
-    }
+    }// POLIMORFISMO
     public override void Eat(bool fullPlate)
 
     {
