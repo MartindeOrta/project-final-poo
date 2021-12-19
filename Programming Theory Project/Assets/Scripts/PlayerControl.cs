@@ -4,24 +4,15 @@ using UnityEngine;
 
 public class PlayerControl : MonoBehaviour
 {
-    public Plates plates;
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    [SerializeField] private Plates plates;
 
-    // Update is called once per frame
     void Update()
-    {
+    {    
         if (Input.GetMouseButtonDown(0))
         {
-            LlenarPlato();
+            plates.OnMouseDown();
         }
     }
 
-    void LlenarPlato()
-    {
-        plates.OnMouseDown();
-    }
+  
 }

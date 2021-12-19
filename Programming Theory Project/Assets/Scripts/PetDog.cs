@@ -4,28 +4,25 @@ using UnityEngine;
 
 public class PetDog : pet
 {
-    private Animator ani;
-    
-    // Start is called before the first frame update
-    void Start()
-    {
-        ani = GetComponent<Animator>();
-        plate = GameObject.Find("PlateDog").GetComponent<Plates>();
-        myFood = "Dog";
-    }
-
-    // Update is called once per frame
     void Update()
     {
-        Vector3 lookDirection = -(plate.transform.position - transform.position).normalized;
-        Eat(lookDirection, plate.fullPlate);
-        if (plate.fullPlate)
+
+        Eat(plate.fullPlate);
+        Move();
+
+    }
+    public override void Eat(bool fullPlate)
+
+    {
+        if (fullPlate)
         {
-            ani.SetFloat("VarX", 1);
+
+
+            transform.Translate(Vector3.forward * 3 * Time.deltaTime);
+
+
         }
-        else { ani.SetFloat("VarX", 0); }
-       
     }
 
-    
+
 }
