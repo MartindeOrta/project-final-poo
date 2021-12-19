@@ -9,10 +9,10 @@ public class pet : MonoBehaviour
     [SerializeField] public Plates plate;
     [SerializeField] public static Animator ani;
     [SerializeField] private  int runAnima;
-    [SerializeField] public int run
-    {
-        get 
-    }
+    //[SerializeField] public int run
+    //{
+    //    get 
+    //}
 
         [SerializeField] public static float speed { get; } = 1;
    
